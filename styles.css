@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fdfdfd;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  padding: 2rem;
+  background: #111;
+  color: white;
+}
+
+#hero img {
+  width: 200px;
+  border-radius: 50%;
+  animation: bounceIn 1s ease;
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  60% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+#newsletter {
+  margin: 2rem auto;
+}
+
+input[type="email"] {
+  padding: 0.5rem;
+  width: 200px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background: #111;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  padding: 1rem;
+  background: #eee;
+  font-size: 0.9rem;
+}
