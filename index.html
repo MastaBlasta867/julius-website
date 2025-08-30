@@ -3,30 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Julius | DevOps & Human Rights Advocate</title>
+  <title>Julius | DevOps Engineer & Advocate</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Julius</h1>
-    <p>DevOps Engineer • Human Rights Advocate • Royal House of Nigeria</p>
-  </header>
+  <div id="header"></div>
 
-  <section id="hero">
-    <img src="assets/julius-photo.jpg" alt="Julius portrait" />
-    <h2>Quiet Power. Bold Purpose.</h2>
-  </section>
+  <main>
+    <section id="hero">
+      <img src="assets/julius-photo.jpg" alt="Portrait of Julius" />
+      <h2>Quiet Power. Bold Purpose.</h2>
+      <p>Julius is a DevOps engineer and human rights advocate with roots in the Royal House of Nigeria. His work bridges technology and justice.</p>
+    </section>
 
-  <section id="newsletter">
-    <h3>Get Updates That Matter</h3>
-    <form>
-      <input type="email" placeholder="Your email" required />
-      <button type="submit">Be the First to Know</button>
-    </form>
-  </section>
+    <section id="newsletter">
+      <h3>Get Updates That Matter</h3>
+      <form>
+        <input type="email" placeholder="Your email" required />
+        <button type="submit">Be the First to Know</button>
+      </form>
+    </section>
+  </main>
 
-  <footer>
-    <p>&copy; 2025 Julius. All rights reserved.</p>
-  </footer>
+  <div id="footer"></div>
+
+  <script>
+    // Load header and footer dynamically
+    fetch('components/header.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('header').innerHTML = html);
+
+    fetch('components/footer.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('footer').innerHTML = html);
+  </script>
 </body>
 </html>
